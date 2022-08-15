@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace IPandMask
+{
+    class myIP
+    {
+        public int[] _oktets = new int[4] { 0, 0, 0, 0 };
+        public void PrintIP()
+        {
+            Console.WriteLine("Введите 1 число IP-адреса");
+            _oktets[0] = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите 2 число IP-адреса");
+            _oktets[1] = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите 3 число IP-адреса");
+            _oktets[2] = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите 4 число IP-адреса");
+            _oktets[3] = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ваш IP-адрес: ");
+            Console.WriteLine("{0}.{1}.{2}.{3}", _oktets[0], _oktets[1], _oktets[2], _oktets[3]);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            myIP _ip = new myIP();
+            _ip.PrintIP();
+        }
+    }
+}
