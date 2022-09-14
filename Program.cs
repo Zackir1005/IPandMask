@@ -75,7 +75,6 @@ namespace IPandMASK
                     this.oktets[i] = 0;
                 }
             }
-
         }
         private int AsignOktet(int _index)
         {
@@ -101,9 +100,11 @@ namespace IPandMASK
     {
         public ipMASK() : base()
         {
+
         }
         public ipMASK(int a, int b, int c, int d) : base(a, b, c, d)
         {
+
         }
         public void Input()
         {
@@ -139,7 +140,6 @@ namespace IPandMASK
                 {
                     Console.WriteLine("Некорректный ввод. Попробуйте снова.");
                 }
-
             } while (!_correct);
             return oktet;
         }
